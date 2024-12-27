@@ -219,10 +219,10 @@ int main() {
 
     while (true) {
         std::cout << "1. Добавить трубу" << std::endl;
-        std::cout << "2. Добавить компрессорную станцию" << std::endl;
+        std::cout << "2. Добавить КС" << std::endl;
         std::cout << "3. Просмотреть все объекты" << std::endl;
-        std::cout << "4. Изменить статус ремонта трубы" << std::endl;
-        std::cout << "5. Запустить/остановить цех" << std::endl;
+        std::cout << "4. Изменить трубу" << std::endl;
+        std::cout << "5. Релактировать КС" << std::endl;
         std::cout << "6. Сохранить" << std::endl;
         std::cout << "7. Загрузить" << std::endl;
         std::cout << "0. Выход" << std::endl;
@@ -278,12 +278,12 @@ int main() {
             break;
         }
         case 5: {
-            std::cout << "Введите индекс компрессорной станции для редактирования: ";
+            std::cout << "Введите индекс КС для редактирования: ";
             int i;
             std::cin >> i;
             if (i < count_stations && i >= 0) {
-                std::cout << "1. Запустить цех" << std::endl;
-                std::cout << "2. Остановить цех" << std::endl;
+                std::cout << "1. Запустить КС" << std::endl;
+                std::cout << "2. Остановить КС" << std::endl;
                 std::cout << "Выберите действие: ";
                 int doit;
                 std::cin >> doit;
